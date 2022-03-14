@@ -42,7 +42,6 @@ export default {
       axios.post('http://localhost:8000/api/login', { user_id: this.msg})
       .then(res=> {
           if(res.data.id === "admin") {
-            
           }
           else {
             localStorage.setItem('currentUser', res.data.id);
